@@ -1,7 +1,7 @@
 ﻿streamlit==1.54.0
 pandas==2.3.3
-numpy==1.26.4
 scikit-learn==1.7.2
 joblib==1.5.3
 
 tensorflow==2.20.0
+
