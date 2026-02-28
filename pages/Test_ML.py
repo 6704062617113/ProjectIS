@@ -19,6 +19,6 @@ if st.button("Predict"):
     input_scaled = scaler.transform(input_data)
     prediction = model.predict(input_scaled)
     if prediction[0] == 1:
-        st.error("⚠️ Result: Diabetes Detected")
+        st.error("High Risk of Diabetes Detected")
     else:
-        st.success("✅ Result: No Diabetes")
+        st.success("Low Risk of Diabetes Detected")
