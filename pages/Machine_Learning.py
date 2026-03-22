@@ -22,6 +22,11 @@ Median imputation was selected because medical datasets may contain outliers."""
 st.write("""**Train-test Split:**  80% Training Set and 20% Testing Set""")
 st.write("""**Standard Scaler:**  Use StandardScaler to adjust attribute values ​​to standard format (Mean = 0, Standard Deviation = 1).""")
 st.write("#### **Algorithms**")
+st.write("""**Ensemble**\n
+Ensemble learning is a machine learning technique where multiple models. The primary idea is to leverage the strengths of each model while mitigating their weaknesses.\n
+Voting Classifier:Voting combines predictions of multiple models.\n
+Soft Voting: Averages the predicted probabilities and chooses the class with the highest probability.
+""")
 st.write("The model developed uses Ensemble Learning, which combines several algorithms, including:")
 st.write("""**1.K-Nearest Neighbors (KNN):** \n
 K-Nearest Neighbors (KNN) is a supervised machine learning algorithm generally used for classification but can also be used for regression tasks. It works by finding the "k" closest data points (neighbors) to a given input and makes a predictions based on the majority class (for classification) or the average value (for regression). Since KNN makes no assumptions about the underlying data distribution it makes it a non-parametric and instance-based learning method.\n
@@ -29,7 +34,7 @@ K-Nearest Neighbors (KNN) is a supervised machine learning algorithm generally u
 Support Vector Machine (SVM) is a supervised machine learning algorithm used for classification and regression tasks. It tries to find the best boundary known as hyperplane that separates different classes in the data. It is useful when you want to do binary classification like spam vs. not spam or cat vs. dog.\n
 The main goal of SVM is to maximize the margin between the two classes. The larger the margin the better the model performs on new and unseen data.\n
 **3.Random Forest:**\n
-Random Forest is a machine learning algorithm that uses many decision trees to make better predictions. Each tree looks at different random parts of the data and their results are combined by voting for classification or averaging for regression which makes it as ensemble learning technique. This helps in improving accuracy and reducing errors.""")
+Random Forest is a machine learning algorithm that uses many decision trees to make better predictions. Each tree looks at different random parts of the data and their results are combined by voting for classification or averaging. """)
 st.write("#### **Model Development Process**")
 st.write("""
 1.	Load dataset from CSV file
@@ -38,12 +43,13 @@ st.write("""
 4.	Split data into training and testing sets
 5.	Apply feature scaling
 6.	Train KNN, SVM, and Random Forest models
-7.	Combine models using Voting Classifier
+7.	Combine models using Voting Classifier(Soft Voting)
 8.	Train the ensemble model
 9.	Evaluate model performance using accuracy
 10.	Save the trained model and scaler for deployment""")
 st.write("#### **References**")
 st.write("""**Data:** https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database\n
+**Information about Ensemble:**https://medium.com/@bhatadithya54764118/day-41-ensemble-learning-practical-stacking-and-voting-classifiers-366b5fb64616\n
 **Information about KNN:** https://www.geeksforgeeks.org/machine-learning/k-nearest-neighbours/\n
 **Information about SVM:** https://www.geeksforgeeks.org/machine-learning/support-vector-machine-algorithm/\n
 **Information about Random Forest:** https://www.geeksforgeeks.org/machine-learning/random-forest-algorithm-in-machine-learning/""")

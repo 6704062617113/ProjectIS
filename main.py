@@ -21,3 +21,10 @@ with row2_center:
     with col4:
         if st.button("Test Neural Network", use_container_width=True):
             st.switch_page("pages/Test_NN.py")
+st.markdown(
+    """<h7 style='text-align: center;'>
+    \n Produced by: \nNatthamon Wonganusorn 6704062617113\n
+Possawee Incham 6704062617202
+    </h7>""",
+    unsafe_allow_html=True
+)

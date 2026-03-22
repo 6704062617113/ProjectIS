@@ -20,23 +20,28 @@ st.write("""**Data Cleaning:**
          
 Missing values represented as “?” were replaced with the median of each feature. The target variable was converted into binary classes (0 = No Heart Disease, 1 = Heart Disease). All features were standardized using StandardScaler before training the neural network.""")
 st.write("#### **Algorithms**")
-st.write("**Artificial Neural Networks**")
-st.write("""ANNs work by learning patterns in data through a process called training. During training, the network adjusts itself to improve its accuracy by comparing its predictions with the actual results.\n
-**Key Components of an ANN**
-Input Layer: This is where the network receives information. For example, in an image recognition task, the input could be an image.
-Hidden Layers: These layers process the data received from the input layer. The more hidden layers there are, the more complex patterns the network can learn and understand. Each hidden layer transforms the data into more abstract information.
-Output Layer: This is where the final decision or prediction is made. For example, after processing an image, the output layer might decide whether it’s a cat or a dog.""")
+st.write("**Multi-Layer Perceptron**")
+st.write("""Multi-Layer Perceptron (MLP) consists of fully connected dense layers that transform input data from one dimension to another. It is called multi-layer because it contains an input layer, one or more hidden layers and an output layer. The purpose of an MLP is to model complex relationships between inputs and outputs.\n
+**Components of Multi-Layer Perceptron (MLP)**\n
+Input Layer: Each neuron or node in this layer corresponds to an input feature. For instance, if you have three input features the input layer will have three neurons.\n
+Hidden Layers: MLP can have any number of hidden layers with each layer containing any number of nodes. These layers process the information received from the input layer.\n
+Output Layer: The output layer generates the final prediction or result. If there are multiple outputs, the output layer will have a corresponding number of neurons.\n
+every node in one layer connects to every node in the next layer. As the data moves through the network each layer transforms it until the final output is generated in the output layer.\n
+**Working of Multi-Layer Perceptron**\n
+1. Forward Propagation : the data flows from the input layer to the output layer, passing through any hidden layers. Each neuron in the hidden layers processes the input\n
+2. Loss Function : Once the network generates an output the next step is to calculate the loss using a loss function. In supervised learning this compares the predicted output to the actual label.\n
+3. Backpropagation : The goal of training an MLP is to minimize the loss function by adjusting the network's weights and biases.""")
 st.write("#### **Model Development Process**")
 st.write("""The model development process consists of the following steps:
-1.	Load the dataset and assign column names.
-2.	Clean the data by replacing missing values with the median and converting the target into binary form (0 = no disease, 1 = disease).
-3.	Split the dataset into Training, Validation, and Test sets.
-4.	Apply feature scaling using StandardScaler to normalize input features.
-5.	Build a Multilayer Perceptron (MLP) with multiple dense layers.
-6.	Train the model using Binary Cross-Entropy loss, Adam optimizer, and Early Stopping.
-7.	Evaluate model performance using Accuracy and Recall.
-8.	Select the optimal classification threshold.
-9.	Save the trained model and scaler for deployment in the web application.""")
+1.	Load and preprocess the dataset by handling missing values with the median and converting the target into binary form.
+2.	Split the data into training, validation, and test sets.
+3.	Apply feature scaling using StandardScaler.
+4.	Build a Multilayer Perceptron (MLP) model.
+5.	Train the model using Binary Cross-Entropy loss, Adam optimizer, and Early Stopping.
+6.	Evaluate the model using Accuracy and Recall.
+7.	Select the optimal classification threshold.	
+8.	Save the trained model and scaler for deployment.
+""")
 st.write("#### **References**")
 st.write("""**Data:** https://uci-ics-mlr-prod.aws.uci.edu/dataset/45/heart%2Bdisease?utm_source=chatgpt.com\n
-**Information about ANN:** https://www.geeksforgeeks.org/deep-learning/artificial-neural-networks-and-its-applications/""")
+**Information about MLP:** https://www.geeksforgeeks.org/deep-learning/multi-layer-perceptron-learning-in-tensorflow/""")
