@@ -49,7 +49,7 @@ st.write("""
 10.	Save the trained model and scaler for deployment""")
 st.write("#### **References**")
 st.write("""**Data:** https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database\n
-**Information about Ensemble:**https://medium.com/@bhatadithya54764118/day-41-ensemble-learning-practical-stacking-and-voting-classifiers-366b5fb64616\n
+**Information about Ensemble:** https://medium.com/@bhatadithya54764118/day-41-ensemble-learning-practical-stacking-and-voting-classifiers-366b5fb64616\n
 **Information about KNN:** https://www.geeksforgeeks.org/machine-learning/k-nearest-neighbours/\n
 **Information about SVM:** https://www.geeksforgeeks.org/machine-learning/support-vector-machine-algorithm/\n
 **Information about Random Forest:** https://www.geeksforgeeks.org/machine-learning/random-forest-algorithm-in-machine-learning/""")
